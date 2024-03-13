@@ -1,0 +1,112 @@
+/* ProductCard.css */
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card {
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  /*Adjustwidthasneeded*/margin: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px 25px;
+  background: linear-gradient(90deg, #ccb7f7, #8ee9ec);
+  /*Thiswillpushthebuttontothebottom*/transition: transform 0.3s ease, box-shadow 0.3s ease;
+   ;
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight move up */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow for hover */
+}
+
+.card.popular {
+  background-color: #ffe3e3; /* Light background for popular card */
+}
+
+.card-header {
+  margin-bottom: 20px;
+  color: #051c3d;
+}
+.card-id{
+  background-color: #007bff;
+  color: white;
+}
+
+.card-id {
+  margin-right: 100%;
+  margin-bottom: 10px;
+}
+
+.card-popularity {
+  position: absolute;
+  top: -10px;
+  right: 10px; /* Position on the right top corner */
+  background: #ffd1d1;
+  color: #ff4b5c;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+.price {
+  font-size: 2em;
+  color: #0a4088;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0; /* Zero out the bottom margin */
+  flex-grow: 1; /* Allows this element to grow and push the button down */
+}
+
+.features li {
+ 
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Change cursor to indicate the item is clickable */
+  padding: 5px; /* Add padding for better clickability and visual space */
+}
+
+.features li:hover {
+  background-color: white; /* Light grey background on hover */
+  color: #210e8d;  /* Optional: Change the text color on hover */
+  border-radius: 5px; /* Optional: Add a slight border radius */
+}
+
+
+.btn-get-started {
+  background-color: #051c3d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: center; /* Center the button */
+}
+
+.btn-get-started:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight move up */
+}
+
+/* Flex container for the cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds space between cards */
+}
+

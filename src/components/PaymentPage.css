@@ -1,0 +1,95 @@
+/* PaymentPage.css */
+
+.payment-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.payment-container {
+  background-color: white;
+  padding: 30px; /* More padding for a spacious look */
+  border-radius: 15px; /* Slightly larger border-radius for a softer look */
+  text-align: center;
+  width: auto; /* Adapt width */
+  max-width: 500px; /* Maximum width for larger screens */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); /* More prominent shadow */
+  animation: scaleIn 0.3s ease forwards; /* Animation on load */
+}
+
+/* Animation for scaling in the payment container */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  border: none; /* Remove border if any */
+  background: transparent; /* Remove any background */
+  padding: 10px; /* Padding for larger clickable area */
+}
+
+.close-button:hover {
+  transform: rotate(90deg); /* Slight rotation on hover for a dynamic effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+.qr-code {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* More vertical margin */
+  border: none; /* Removing the border for a cleaner look */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtler shadow */
+}
+
+.upi {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333; /* Darker text for better readability */
+  background-color: #f7f7f7; /* Light background for the UPI ID container */
+  padding: 10px;
+  border-radius: 8px; /* Consistent rounded corners */
+  display: inline-block; /* To fit the content size */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling the button inside the payment container for consistency */
+.payment-container button {
+  background-color: black; /* A pleasant green color */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Fully rounded edges */
+  padding: 12px 25px;
+  font-size: 16px; /* Slightly larger font size */
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for the button */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for the button */
+  margin-top: 30px; /* Spacing from the UPI ID */
+}
+
+.payment-container button:hover {
+  background-color: #367B37; /* A darker shade of the button color for hover effect */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
