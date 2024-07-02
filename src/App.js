@@ -70,6 +70,7 @@ const products = [
     title: "Presidential Portfolio Plan ",
     price: "₹5,369.00",
     features: [
+      "✓ Enroll as a Channel Partner with zero fees or charges on any Financial Product",
       "✓ Based Deals on Fees & Charges ",
       "✓ Regular Financial Check-ups",
       "✓ Periodic reviews & Support",
