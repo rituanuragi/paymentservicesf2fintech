@@ -1,6 +1,6 @@
-import React from 'react';
-import ProductCard from './components/ProductCard';
-import './App.css'; // Make sure to import the CSS
+import React from "react";
+import ProductCard from "./components/ProductCard";
+import "./App.css"; // Make sure to import the CSS
 
 const products = [
   {
@@ -10,16 +10,31 @@ const products = [
     features: [
       "✓F2 Financial Advisory",
       "✓1 Free live session",
-      "✓Get 15mins Free Call",
-      "1st call for data gathering with our advisor",
-      "✓2nd call with our qualified financial advisor for a plan"
+      "✓Get 5mins Free Call",
+      "✓1st call for data gathering with our advisor",
+      "✓2nd call with our qualified financial advisor for a plan",
     ],
     isPopular: false,
-    upiId: 'harpreet3006-1@okhdfcbank',
-    qrCodeImage: './qr1.jpg' // Path to the QR code image for Product 1
+    upiId: "harpreet3006-1@okhdfcbank",
+    qrCodeImage: "./qr1.jpg", // Path to the QR code image for Product 1
   },
   {
     id: "002",
+    title: "Standard Lending Solution",
+    price: "₹100.00",
+    features: [
+      "✓F2 Financial Advisory",
+      "✓1 Free live session",
+      "✓Get 30mins Free Call",
+      "✓1st call for data gathering with our advisor",
+      "✓2nd call with our qualified financial advisor for a plan",
+    ],
+    isPopular: false,
+    upiId: "harpreet3006-1@okhdfcbank",
+    qrCodeImage: "./qr-100.jpg", // Path to the QR code image for Product 1
+  },
+  {
+    id: "003",
     title: "Supreme Strategy For Lenders",
     price: "₹639.00",
     features: [
@@ -27,66 +42,75 @@ const products = [
       "✓ Eligibility Check Form Multiple Lenders",
       "✓ Persoalized Lending Solutions",
       "Free live sessions",
-      "✓ One Year Relationship Management (RM) Support"
+      "✓ One Year Relationship Management (RM) Support",
     ],
     isPopular: false,
-   
-    qrCodeImage: './qrcode2.jpg' // Path to the QR code image for Product 2
+    qrCodeImage: "./qrcode2.jpg", // Path to the QR code image for Product 2
   },
   {
-    id: "003",
+    id: "004",
     title: "Ultimate Financial Blueprint",
     price: "₹1369.00",
     features: [
-      "✓ F2 Financial Advisory ",
+      "✓ F2 Financial Advisory",
       "✓ Personalized Loan Solutions",
       "✓ Team Sheet For Easy Comparison",
       "Free live sessions",
-      "✓ 1 Year RM Support"
+      "✓ 1 Year RM Support",
     ],
     isPopular: false,
-    
-    qrCodeImage: './qr3.jpg'
-
-  },
-  // ... Include other product details here
-  {
-    id: "004",
-    title: "Magnus Premier Portfolio",
-    price: "₹3,369.00",
-    features: [
-      "✓ Priority Access to Senior Financial Experts ",
-      "✓ Rapid Lending Processing",
-      "✓ Regular financial consultations sessions",
-      "✓ Lifetime F2 Membership",
-      
-    ],
-    isPopular: false,
-   
-    qrCodeImage: './qr4.jpg'
+    qrCodeImage: "./qr3.jpg", // Path to the QR code image for Product 3
   },
   {
-    id: "005",
-    title: "Presidential Portfolio Plan ",
+    id: "006",
+    title: "Presidential Portfolio Plan",
     price: "₹5,369.00",
     features: [
-      "✓ Based Deals on Fees & Charges ",
+      "✓ Enroll as a Channel Partner with zero fees or charges on any Financial Product",
+      "✓ Based Deals on Fees & Charges",
       "✓ Regular Financial Check-ups",
       "✓ Periodic reviews & Support",
-      "✓ Priority Processing",
-      
+      "✓ 1 Year RM Support",
     ],
     isPopular: false,
-   
-    qrCodeImage: './qr5.jpg'
+    qrCodeImage: "./qr5.jpg", // Path to the QR code image for Product 5
   },
+  {
+    id: "006",
+    title: "Executive Presidential Portfolio Plan",
+    price: "₹10,369.00",
+    features: [
+      "✓ Enroll as a Channel Partner with zero fees or charges on any Financial Product",
+      "✓ Based Deals on Fees & Charges",
+      "✓ Regular Financial Check-ups",
+      "✓ Periodic reviews & Support",
+      "✓ 5 Year RM Support",
+    ],
+    isPopular: false,
+    qrCodeImage: "./qr-10369.jpeg", // Path to the QR code image for Product 5
+  },
+  {
+    id: "008",
+    title: "Premium Presidential Portfolio Plan",
+    price: "₹15,369.00",
+    features: [
+      "✓ Enroll as a Channel Partner with zero fees or charges on any Financial Product",
+      "✓ Based Deals on Fees & Charges",
+      "✓ Regular Financial Check-ups",
+      "✓ Periodic reviews & Support",
+      "✓ Lifetime RM Support",
+    ],
+    isPopular: false,
+    qrCodeImage: "./qr-15369.jpeg", // Path to the QR code image for Product 5
+  },
+
   // Add other products with their respective QR code images
 ];
 
 function App() {
   return (
     <div className="card-container">
-      {products.map(product => (
+      {products.map((product) => (
         <ProductCard
           key={product.id}
           id={product.id}
@@ -96,7 +120,6 @@ function App() {
           isPopular={product.isPopular}
           upiId={product.upiId}
           qrCodeImage={product.qrCodeImage}
-          
         />
       ))}
     </div>
