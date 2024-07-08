@@ -8,7 +8,7 @@ const products = [
     title: "Standard Lending Solution",
     price: "₹1.00",
     features: [
-      "✓F2 Financial Advisory",
+      "✓F2 Financial Advisory(6 Times)",
       "✓1 Free live session",
       "✓Get 5mins Free Call",
       "✓1st call for data gathering with our advisor",
@@ -23,7 +23,7 @@ const products = [
     title: "Standard Lending Solution",
     price: "₹100.00",
     features: [
-      "✓F2 Financial Advisory",
+      "✓F2 Financial Advisory(6 Months)",
       "✓1 Free live session",
       "✓Get 30mins Free Call",
       "✓1st call for data gathering with our advisor",
@@ -42,7 +42,7 @@ const products = [
       "✓ Eligibility Check Form Multiple Lenders",
       "✓ Persoalized Lending Solutions",
       "Free live sessions",
-      "✓ One Year Relationship Management (RM) Support",
+      "✓ 3 Times Relationship Management (RM) Support",
     ],
     isPopular: false,
     qrCodeImage: "./qrcode2.jpg", // Path to the QR code image for Product 2
@@ -52,11 +52,11 @@ const products = [
     title: "Ultimate Financial Blueprint",
     price: "₹1369.00",
     features: [
-      "✓ F2 Financial Advisory",
+      "✓ F2 Financial Advisory(3 Years)",
       "✓ Personalized Loan Solutions",
       "✓ Team Sheet For Easy Comparison",
       "Free live sessions",
-      "✓ 1 Year RM Support",
+      "✓ 3 Years RM Support",
     ],
     isPopular: false,
     qrCodeImage: "./qr3.jpg", // Path to the QR code image for Product 3
@@ -70,7 +70,7 @@ const products = [
       "✓ Based Deals on Fees & Charges",
       "✓ Regular Financial Check-ups",
       "✓ Periodic reviews & Support",
-      "✓ 1 Year RM Support",
+      "✓ 5 Year RM Support",
     ],
     isPopular: false,
     qrCodeImage: "./qr5.jpg", // Path to the QR code image for Product 5
@@ -84,7 +84,7 @@ const products = [
       "✓ Based Deals on Fees & Charges",
       "✓ Regular Financial Check-ups",
       "✓ Periodic reviews & Support",
-      "✓ 5 Year RM Support",
+      "✓ 9 Year RM Support",
     ],
     isPopular: false,
     qrCodeImage: "./qr-10369.jpeg", // Path to the QR code image for Product 5
