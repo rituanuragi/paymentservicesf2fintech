@@ -28,10 +28,16 @@ const PaymentPage = ({ upiId, onClose, isSecondQR }) => {
       qrCodeImage = qrCodeImage4;
       break;
     case "006":
+      qrCodeImage = qrCodeImage5;
+      break;
+    case "007":
       qrCodeImage = qrCodeImage7;
       break;
-    default:
+    case "008":
       qrCodeImage = qrCodeImage8;
+      break;
+    default:
+      qrCodeImage = qrCodeImage7;
   }
 
   return (

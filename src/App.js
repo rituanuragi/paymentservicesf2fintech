@@ -76,7 +76,7 @@ const products = [
     qrCodeImage: "./qr5.jpg", // Path to the QR code image for Product 5
   },
   {
-    id: "006",
+    id: "007",
     title: "Executive Presidential Portfolio Plan",
     price: "₹10,369.00",
     features: [
